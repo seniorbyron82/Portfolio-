@@ -1,0 +1,396 @@
+html_content = """<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byron Ochieng Otieno | E-Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        },
+                        slate: {
+                            850: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-600 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-brand-700 text-white flex items-center justify-center font-bold text-lg shadow-md">
+                        BO
+                    </div>
+                    <div>
+                        <a href="#hero" class="text-lg font-bold text-slate-900 tracking-tight block leading-tight hover:text-brand-700 transition">Byron Ochieng Otieno</a>
+                        <span class="text-xs text-slate-500 font-medium">Agricultural Innovator & Educator</span>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-brand-700 transition">About</a>
+                    <a href="#competencies" class="hover:text-brand-700 transition">Competencies</a>
+                    <a href="#ventures" class="hover:text-brand-700 transition">Ventures & Projects</a>
+                    <a href="#experience" class="hover:text-brand-700 transition">Experience</a>
+                    <a href="#education" class="hover:text-brand-700 transition">Education</a>
+                    <a href="#contact" class="hover:text-brand-700 transition">Contact</a>
+                </nav>
+                <div class="hidden md:flex">
+                    <a href="#contact" class="px-4 py-2 bg-brand-700 hover:bg-brand-800 text-white text-sm font-semibold rounded-lg shadow-sm transition">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-b from-slate-900 via-slate-850 to-slate-900 text-white py-24 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#16a34a_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-900/60 border border-brand-600/40 text-brand-200 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+                    <span>Agri-Innovation & Leadership</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-none mb-6">
+                    Transforming Food Systems Through <span class="text-brand-600">Education & Technology</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8">
+                    Founder & CEO at Plus Agriculture. Dedicated to youth empowerment, value addition, climate-smart agriculture, and cross-disciplinary agri-integration.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#ventures" class="px-6 py-3.5 bg-brand-700 hover:bg-brand-800 text-white font-semibold rounded-lg shadow-lg hover:shadow-brand-900/50 transition">
+                        Explore Key Ventures
+                    </a>
+                    <a href="#contact" class="px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-lg transition">
+                        Connect & Collaborate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <div class="aspect-square rounded-2xl bg-slate-100 border border-slate-200 p-8 flex flex-col justify-between shadow-sm">
+                            <div class="w-16 h-16 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-2xl mb-6">
+                                🌱
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-slate-900 mb-2">Byron Ochieng Otieno</h3>
+                                <p class="text-slate-600 font-medium mb-4">Nakuru, Kenya</p>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-2">Roles & Leadership</p>
+                                <ul class="text-sm text-slate-700 space-y-1.5">
+                                    <li class="flex items-center">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-700 mr-2"></span>
+                                        Founder & CEO, Plus Agriculture
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-700 mr-2"></span>
+                                        Agricultural Educator & Innovator
+                                    </li>
+                                    <li class="flex items-center">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-700 mr-2"></span>
+                                        Financial Advisor, Britam Holding Co.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <span class="text-brand-700 font-semibold text-sm uppercase tracking-wider">About Me</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-2 mb-6">Pioneering Sustainable Agricultural Development</h2>
+                    <div class="space-y-4 text-slate-600 leading-relaxed">
+                        <p>
+                            I am an agricultural educator, innovator, and entrepreneur dedicated to transforming food systems and promoting sustainable rural and urban development. As the Founder and CEO of <strong>Plus Agriculture</strong>, I pioneer initiatives that bridge the gap between agricultural science, youth empowerment, and cross-disciplinary integration.
+                        </p>
+                        <p>
+                            My work spans value-addition enterprises designed to reduce post-harvest losses, AI-driven digital tools for smallholder farmers, and financial risk management solutions. Through public speaking, strategic coaching, and community-level agricultural training, I advocate for modern, resilient, and economically viable food systems across Africa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section id="competencies" class="py-20 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Core Competencies</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Professional Expertise & Capabilities</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-xl mb-6">
+                        🎓
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Agricultural Education & Extension</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Curriculum design, community outreach, climate-smart agriculture training, and farmer capacity building across diverse rural communities.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-xl mb-6">
+                        🍎
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Agribusiness & Value Addition</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Post-harvest loss mitigation, circular economy models, food processing enterprise concepts, and sustainable supply chain designs.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-xl mb-6">
+                        💡
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Agri-Tech & Digital Innovation</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Digital farm management interfaces, feed formulation logic, learn-to-earn models, and smart decision support systems for farmers.
+                    </p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-xl mb-6">
+                        🛡️
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Financial Literacy & Advisory</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Agricultural risk management, insurance solutions, wealth-creation strategies, and institutional financial workshop facilitation.
+                    </p>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-xl mb-6">
+                        🎤
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Public Speaking & Advocacy</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Keynote presentations, storytelling for impact, youth empowerment webinars (+AgriTalk), and cross-disciplinary advocacy.
+                    </p>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-xl mb-6">
+                        🤝
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Stakeholder Engagement</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Institutional partnerships, community development initiatives, environmental conservation planning, and field extension leadership.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Ventures & Innovations -->
+    <section id="ventures" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Featured Projects</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Ventures & Key Initiatives</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Venture 1 -->
+                <div class="border border-slate-200 rounded-2xl p-8 bg-slate-50 flex flex-col justify-between hover:border-brand-600 transition">
+                    <div>
+                        <span class="px-3 py-1 bg-brand-100 text-brand-800 text-xs font-semibold rounded-full">Flagship Venture</span>
+                        <h3 class="text-2xl font-bold text-slate-900 mt-4 mb-2">Plus Agriculture & GreenHome</h3>
+                        <p class="text-xs font-semibold text-brand-700 uppercase tracking-wider mb-4">Founder & CEO</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Pioneered cross-disciplinary agricultural integration frameworks and launched GreenHome to support household organic kitchen gardens on rooftops, balconies, and backyards. Host of the +AgriTalk dialogue series.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200 pt-4">
+                        <li class="flex items-center">✓ Cross-profession food security frameworks</li>
+                        <li class="flex items-center">✓ Urban kitchen garden setups & guidance</li>
+                        <li class="flex items-center">✓ Youth engagement via +AgriTalk</li>
+                    </ul>
+                </div>
+                <!-- Venture 2 -->
+                <div class="border border-slate-200 rounded-2xl p-8 bg-slate-50 flex flex-col justify-between hover:border-brand-600 transition">
+                    <div>
+                        <span class="px-3 py-1 bg-amber-100 text-amber-800 text-xs font-semibold rounded-full">Value Addition</span>
+                        <h3 class="text-2xl font-bold text-slate-900 mt-4 mb-2">Jijenge Bites</h3>
+                        <p class="text-xs font-semibold text-brand-700 uppercase tracking-wider mb-4">Founder & Product Strategist</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Innovative enterprise converting Grade B fruit produce into high-value snacks, fruit burgers, wraps, and powders, effectively reducing post-harvest losses and supporting smallholder farm incomes.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200 pt-4">
+                        <li class="flex items-center">✓ Circular economy food processing</li>
+                        <li class="flex items-center">✓ Post-harvest waste reduction</li>
+                        <li class="flex items-center">✓ Direct smallholder sourcing pipelines</li>
+                    </ul>
+                </div>
+                <!-- Venture 3 -->
+                <div class="border border-slate-200 rounded-2xl p-8 bg-slate-50 flex flex-col justify-between hover:border-brand-600 transition">
+                    <div>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full">Smart Tech Concept</span>
+                        <h3 class="text-2xl font-bold text-slate-900 mt-4 mb-2">FarmIQ+ & R&D</h3>
+                        <p class="text-xs font-semibold text-brand-700 uppercase tracking-wider mb-4">Lead Concept Architect</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                            Architected digital decision-support concept tools including AI livestock feed formulation and agrochemical advice. Explored eco-innovations like sugarcane bagasse seedling pots and solar dehydrators.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-2 border-t border-slate-200 pt-4">
+                        <li class="flex items-center">✓ Feed formulation & crop advice UX</li>
+                        <li class="flex items-center">✓ Biodegradable bagasse seedling pots</li>
+                        <li class="flex items-center">✓ Low-cost solar dehydration technology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Career History</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Professional Experience</h2>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Exp 1 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Financial Advisor & Agri-Integration Coach</h3>
+                            <p class="text-brand-700 font-medium">Britam Holding Company — Nakuru, Kenya</p>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-2 sm:mt-0 w-max">Active Role</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Delivers financial risk management, insurance advisory, and wealth-building solutions for individuals, businesses, and academic institutions.</li>
+                        <li>Proposes and facilitates institutional workshops on financial literacy, agricultural risk mitigation, and strategic planning.</li>
+                    </ul>
+                </div>
+                <!-- Exp 2 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Agricultural Educator & Extension Specialist</h3>
+                            <p class="text-brand-700 font-medium">Farming Systems Kenya & Educational Field Work</p>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full mt-2 sm:mt-0 w-max">Field Engagements</span>
+                    </div>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Conducted livestock management, crop extension, and climate-smart training across Nakuru, Nyandarua, and Baringo counties.</li>
+                        <li>Served as exhibitor guide across plant, dairy goat, sheep, and donkey management sections at the Agricultural Society of Kenya (ASK) Show.</li>
+                        <li>Engaged in community environmental awareness and stakeholder initiatives including the UNDP GEF7 project launch.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-700 font-semibold text-sm uppercase tracking-wider">Academic Background</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Education & Professional Credentials</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="border border-slate-200 p-8 rounded-xl bg-slate-50">
+                    <span class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Degree</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">B.Sc. Agricultural Education & Extension</h3>
+                    <p class="text-sm text-slate-600 font-medium mb-4">Egerton University, Kenya</p>
+                    <p class="text-sm text-slate-500">Comprehensive foundation in pedagogical techniques, agricultural extension methods, crop and livestock science, and community development.</p>
+                </div>
+                <div class="border border-slate-200 p-8 rounded-xl bg-slate-50">
+                    <span class="text-xs font-semibold text-brand-700 uppercase tracking-wider">Certifications & Training</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Professional Short Courses</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 mt-3">
+                        <li class="flex items-start">
+                            <span class="text-brand-700 mr-2">•</span>
+                            <span>Entrepreneurship — Queen's University</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand-700 mr-2">•</span>
+                            <span>Parliamentary Action for Food Systems & Nutrition</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brand-700 mr-2">•</span>
+                            <span>Climate-Smart Agriculture & Public Speaking Workshops</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Call to Action -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">Let's Build Sustainable Food Futures Together</h2>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-10">
+                Open to advisory roles, agricultural speaking engagements, partnership opportunities, and project collaborations.
+            </p>
+            <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:byron.otieno@plusagriculture.org" class="px-8 py-4 bg-brand-700 hover:bg-brand-800 text-white font-semibold rounded-lg shadow-lg transition">
+                    Contact via Email
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-lg transition">
+                    Connect on LinkedIn
+                </a>
+            </div>
+            <p class="text-xs text-slate-500 mt-12">
+                📍 Nakuru, Kenya &bull; Founder & CEO, Plus Agriculture
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-8 text-slate-500 text-xs text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>&copy; Byron Ochieng Otieno. All rights reserved. Built with HTML & Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+"""
+
+with open('portfolio.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Saved portfolio.html successfully.")
+
+
